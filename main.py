@@ -54,6 +54,8 @@ class MainWindow(QMainWindow):
         self.__filename_dict = {}
 
     def __initUi(self):
+        self.setWindowTitle('PyQt Face Mosaic Example')
+
         findPathWidget = FindPathWidget()
         findPathWidget.getLineEdit().setPlaceholderText('Select the Directory including images...')
         findPathWidget.added.connect(self.__addFiles)
